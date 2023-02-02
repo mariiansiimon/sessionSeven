@@ -1,0 +1,21 @@
+# برنامه ای بنویسید که لیستی با 10 عدد صحیح رندم ایجاد کند سپس این لیست را به دو لیست تقسیم کند یکی لیست اعداد زوج و دیگری لیست با اعداد فرد
+  
+import random
+
+mainList = []
+oddList = []
+evenList = []
+for i in range(10):
+   randNum = random.randint(0, 100) 
+   mainList.append( randNum )
+
+for k in mainList :
+    if k % 2 == 0:
+        oddList.append(k)
+
+    else:
+        evenList.append(k)
+
+
+print(mainList)
+print(evenList, oddList)
